@@ -1,6 +1,6 @@
 import { ProcessingResult } from '@/types';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+const API_BASE = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001').replace(/\/$/, '');
 
 /**
  * Upload and process a CSV file through the backend AI pipeline.

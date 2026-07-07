@@ -46,6 +46,11 @@ app.use((err: Error, _req: express.Request, res: express.Response, _next: expres
   });
 });
 
+// Root route to prevent Cannot GET / error
+app.get('/', (_req, res) => {
+  res.json({ message: 'AI CSV Importer API is running successfully' });
+});
+
 // Only listen on a port if not deployed to Vercel (Vercel handles routing to the exported app)
 if (!process.env.VERCEL) {
   app.listen(PORT, () => {
@@ -56,3 +61,4 @@ if (!process.env.VERCEL) {
 }
 
 export default app;
+module.exports = app;
