@@ -46,10 +46,13 @@ app.use((err: Error, _req: express.Request, res: express.Response, _next: expres
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Backend server running on http://localhost:${PORT}`);
-  console.log(`📊 Health check: http://localhost:${PORT}/api/health`);
-  console.log(`🔑 Gemini API key: ${process.env.GEMINI_API_KEY ? 'configured' : 'NOT SET — add to .env'}`);
-});
+// Only listen on a port if not deployed to Vercel (Vercel handles routing to the exported app)
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`🚀 Backend server running on http://localhost:${PORT}`);
+    console.log(`📊 Health check: http://localhost:${PORT}/api/health`);
+    console.log(`🔑 Gemini API key: ${process.env.GEMINI_API_KEY ? 'configured' : 'NOT SET — add to .env'}`);
+  });
+}
 
 export default app;
