@@ -1,0 +1,6 @@
+lead_id,first_name,last_name,email_1,email_2,phone_1,phone_2,organization,lead_city,lead_state,lead_country,source_platform,lead_status,created_date,remarks,property_handover
+FB001,Amit,Patel,amit.patel@gmail.com,amit.p@work.com,+91-9876543210,+91-9876543211,Real Estate Corp,Mumbai,Maharashtra,India,Facebook Lead,Hot Lead,2026-05-10 10:30:00,"Very interested in 3BHK, budget 1.5Cr",2027-Q1
+FB002,Sneha,Reddy,sneha.r@yahoo.com,,+91-8765432100,,Tech Solutions,Hyderabad,Telangana,India,Facebook Lead,Cold Lead,2026-05-11 14:20:00,Did not pick up 3 times,
+FB003,David,Wilson,david.w@outlook.com,,,+1-5559876543,Wilson & Sons,San Francisco,California,USA,Google Ads,Converted,2026-05-12 09:15:00,"Bought premium plan, needs onboarding",2026-Q4
+FB004,Fatima,Khan,,,,,Khan Industries,Karachi,Sindh,Pakistan,Manual Entry,New,2026-05-13 16:45:00,No contact info available,
+FB005,Ravi,Shankar,ravi.shankar@company.in,,+91-7654321098,,Shankar Builders,Chennai,Tamil Nadu,India,Eden Park Campaign,Follow Up Required,2026-05-14 11:00:00,"Interested in plots, asked for site visit on Saturday",2027-Q2
